@@ -17,9 +17,7 @@ ENV DD_TRACE_ENABLED=true
 ENV DD_SERVICE=SimpleWorker
 ENV DD_ENV=dev
 ENV DD_VERSION=1.0.0
-ENV DD_AGENT_HOST=host.docker.internal
-ENV DD_TRACE_METHODS=SimpleWorker.Worker.ExecuteAsync[*]
-ENV DD_TRACE_DEBUG=true
+ENV DD_AGENT_HOST=localhost
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
